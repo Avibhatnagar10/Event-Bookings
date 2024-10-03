@@ -1,0 +1,21 @@
+/* ProfilePage.css */
+.profile-page {
+    padding: 20px;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

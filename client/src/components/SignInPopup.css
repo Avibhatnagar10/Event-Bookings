@@ -1,0 +1,67 @@
+/* src/components/SignInPopup.css */
+.signin-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is on top */
+    animation: fadeIn 0.5s; /* Animation for fading in */
+}
+
+.popup-content {
+    background: white;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+    text-align: center;
+    animation: scaleIn 0.5s; /* Animation for scaling in */
+}
+
+.google-signin-button {
+    background: linear-gradient(135deg, #4285F4, #34A853); /* Gradient for Google colors */
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Increased padding */
+    margin: 10px 0;
+    border-radius: 30px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    font-weight: bold; /* Bold font */
+    transition: all 0.3s; /* Transition for hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.google-signin-button:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+.close-button {
+    background-color: #e74c3c; /* Close button red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.close-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.7); }
+    to { transform: scale(1); }
+}

@@ -1,0 +1,71 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative; /* Required for dropdown positioning */
+}
+
+.navbar-logo {
+    font-size: 24px; /* Adjust logo size as needed */
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding for links */
+    transition: background 0.3s; /* Smooth background change */
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.dropdown {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.dropdown-toggle {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding for dropdown toggle */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.dropdown-menu {
+    position: absolute; /* Position dropdown items */
+    top: 100%; /* Position below the toggle */
+    left: 0; /* Align to the left of the toggle */
+    background: #2a5298; /* Background color for dropdown */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for dropdown */
+    border-radius: 5px; /* Rounded corners for dropdown */
+    z-index: 1000; /* Ensure dropdown is on top */
+    display: none; /* Hide dropdown by default */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-item {
+    color: white;
+    padding: 10px 15px; /* Padding for dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure items are block elements */
+    transition: background 0.3s; /* Smooth background change */
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect for dropdown items */
+}

@@ -1,0 +1,38 @@
+/* src/components/EventCategories.css */
+.categories-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .categories-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .category-card {
+    margin: 15px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .category-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
