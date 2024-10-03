@@ -1,0 +1,56 @@
+/* src/components/UserProfile.css */
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.user-profile-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-email {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bookings-title {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.bookings-list {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background: #f8f9fa;
+    transition: background 0.3s ease;
+}
+
+.booking-item:hover {
+    background: #e0e0e0;
+}
